@@ -6,7 +6,7 @@ function mySettings(props) {
     if (kpayStatusMessage == 'trial') {
       kpayStatusMessage = getTrialEndsInMessage(props);
     }
-    
+    console.log(settings.kpayStatus)
     return (
       <Page>
         <Section title={<Text bold align="center">Product Status</Text>}>

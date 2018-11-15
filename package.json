@@ -15,6 +15,36 @@
     "i18n": {
       "en": {
         "name": "KiezelPay"
+      },
+      "de": {
+        "name": "KiezelPay"
+      },
+      "es": {
+        "name": "KiezelPay"
+      },
+      "fr": {
+        "name": "KiezelPay"
+      },
+      "it": {
+        "name": "KiezelPay"
+      },
+      "ja": {
+        "name": "KiezelPay"
+      },
+      "ko": {
+        "name": "KiezelPay"
+      },
+      "nl": {
+        "name": "KiezelPay"
+      },
+      "sv": {
+        "name": "KiezelPay"
+      },
+      "zh-cn": {
+        "name": "KiezelPay"
+      },
+      "zh-tw": {
+        "name": "KiezelPay"
       }
     }
   },

@@ -50,7 +50,6 @@ var _dialogClock = null;
 var _setDialogClockTime = null;
 
 var _purchaseSuccessDialog = null;
-
 function _initkpd() {
   console.log("KPay_dialogs - kpay_dialogs initialize called!");
   
@@ -90,7 +89,9 @@ function _showPaidAppPopup() {
   
   //set text
   _get("paidAppPopupText").getElementById("#copy/text").text = kcfg.KPAY_PAID_APP_POPUP_TEXT;
-  
+  _get("alreadyPaid").getElementById("#copy/text").text = kcfg.KPAY_ALREADYPAID_POPUP_TEXT
+  //_get("btnPaidAppAlreadyPaid").getElementById.text = kcfg.KPAY_ALREADYPAID_BUTTON
+document.getElementById("btnPaidAppAlreadyPaid").text = kcfg.KPAY_ALREADYPAID_BUTTON
   //hook up buttons
   _get("btnPaidAppOk").onclick = function(evt) {
     _showElement(paidAppPopup, false);    //hide the popup

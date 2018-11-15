@@ -30,6 +30,8 @@
   <link rel="import" href="/mnt/sysassets/widgets/dynamic_textarea.gui" />
   <link rel="import" href="/mnt/sysassets/widgets/square_button_widget.gui" />
   <link rel="import" href="/mnt/sysassets/widgets/mixed_text_widget.gui" />
+      <link rel="import" href="/mnt/sysassets/widgets/square_button_widget.gui" />
+
   
   <symbol id="kpay">
     <svg x="0" y="0" width="100%" height="100%" id="kpay_errorDialog" display="none">
@@ -69,7 +71,7 @@
           gradient-color1="#3cba92" gradient-color2="#0ba360" />
       </svg>
       <image x="50%-41" y="67" width="82" height="64" href="kpay/kpay_check.png" />
-      <text x="50%" y="100%-40" text-anchor="middle" width="100%" font-size="30" font-family="System-Regular" fill="#ffffff">Purchase Successful!</text>
+      <text x="50%" y="100%-40" text-anchor="middle" width="100%" font-size="30" font-family="System-Regular" fill="#ffffff"></text>
     </svg>
  
     <text x="100%-70" y="10%" width="70" id="kpay_timeInDialog" font-size="23" font-family="System-Regular" fill="#e5e5e5" display="none">00:00</text>
@@ -88,8 +90,8 @@
       </use>
 
       <!-- OK button -->
-      <use id="btnPaidAppOk" class="dialog-half-button-left" href="#square-button-positive">
-        <set href="#text" attributeName="text-buffer" to="Okay, got it!" />
+      <use id="btnPaidAppOk" y="70%" class="dialog-half-button-left" href="#square-button-positive">
+        <set href="#text" attributeName="text-buffer" to="OK" />
         <set href="#text" attributeName="text-anchor" to="middle" />
         <set href="#text" attributeName="fill" to="#ffffff" />
       </use>
@@ -107,7 +109,7 @@
     <rect class="full-size" fill="fb-black" opacity="0.8" />
 
     <!-- text -->
-    <use href="#mixed-text-center-mid" class="dialog-mixed-text" fill="fb-white">
+    <use href="#mixed-text-center-mid" class="dialog-mixed-text" id="alreadyPaid"fill="fb-white">
       <set href="#top-padding" attributeName="display" to="none" />
       <set href="#header" attributeName="display" to="none" />
       <set href="#copy/text" attributeName="text-buffer" to="When the app asks for payment again, use the 'Already purchased' button at the bottom of purchase page to unlock for free." />
@@ -117,7 +119,7 @@
 
     <!-- button -->
     <use id="btnAlreadyPaidOk" class="square-button-positive" href="#square-button-positive" y="100%-70">
-      <set href="#text" attributeName="text-buffer" to="Okay, got it!" />
+      <set href="#text" attributeName="text-buffer" to="OK" />
       <set href="#text" attributeName="text-anchor" to="middle" />
       <set href="#text" attributeName="fill" to="#ffffff" />
     </use>

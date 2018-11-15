@@ -5,6 +5,7 @@ import document from "document";
 import clock from "clock";
 import * as messaging from 'messaging';
 import { memory } from "system";
+import { locale } from "user-settings";
 
 /**** BEGIN KPAY IMPORTS - REQUIRED ****/
 /*
@@ -145,4 +146,11 @@ messaging.peerSocket.addEventListener("error", (err) => {
 
 var totalUsage = 0;
 var totalMeasurements = 0;
-setInterval(function() { totalUsage += memory.js.used; totalMeasurements++; console.log("JS memory: " + memory.js.used + "/" + memory.js.total + " (average: " + Math.round(totalUsage/totalMeasurements) + "/" + memory.js.total + ")"); }, 1000);
+setInterval(function() { totalUsage += memory.js.used; totalMeasurements++; console.log("JS memory: " + memory.js.used + "/" + memory.js.total + " (average: " + Math.round(totalUsage/totalMeasurements) + "/" + memory.js.total + ")"); }, 10000);
+
+
+
+
+// TEXT
+
+
